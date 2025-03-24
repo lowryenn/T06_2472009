@@ -1,0 +1,135 @@
+body{
+    height: 100vh;
+    background-color: #eee7e7;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.login{
+    display: flex;
+    background-color:white;
+    max-width: 900px;
+}
+
+.gambar1{
+    width: 40%;
+    height: 50%;
+    align-items: center;
+}
+
+.login-content{
+    padding: 20px;
+    align-items: center;
+}
+
+.form-option{
+    justify-content: right;
+}
+
+.email2{
+    width: 400px;
+}
+
+.email{
+    color: #2c3e94 ;
+    font-weight:bold;
+    margin-top: 10px;
+}
+
+.password2{
+    width: 400px;
+}
+
+.pw{
+    color: #2c3e94 ;
+    font-weight:bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input{
+    padding: 10px;
+    border: #b4c4f8;
+    border-radius: 6px ;
+    border: 1px solid black;
+}
+
+button{
+    background-color: #4b60d6;
+    color: white;
+    border-radius: 50px;
+    width: 410px;
+    height: 30px;
+}
+
+button:hover{
+    background-color: #2c3e94;
+}
+
+.login-sosial{
+    font-size: 14px;
+}
+
+.sosial-icons{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+h1{
+    font-size: 24px;
+    color: #2c3e94;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.log{
+    font-size: 14px;
+    color: #4b60d6;
+    text-align: center;
+}
+
+.form-option{
+    color: #2c3e94;
+    font-weight:bold;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.social-login{
+    color: #2c3e94;
+    text-align: center;
+}
+
+.signup-link{
+    color: #2c3e94;
+    text-align: center;
+}
+
+@media only screen and (max-width:768px){
+    .gambar1{
+        max-width: 50%;
+    }
+    .login{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+    }
+}
+
+.social-action{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

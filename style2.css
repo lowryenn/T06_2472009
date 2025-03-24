@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.sidebar {
+    width: 250px;
+    background: #2c2f36;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    background: #40444b;
+}
+
+.logout{
+        display: flex;
+        background: red;
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        margin-top: auto;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        border-radius: 5px;
+        font-weight: bold;
+        text-align: center;
+}
+
+.logout:hover{
+    background-color: darkred;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.header {
+    background: #007bff;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header img{
+    width: 50px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.dsh{
+    display: flex;
+    font-size: 24px;
+}
+.adm{
+    display: flex;
+    align-items: center;
+}
+
+.kartu1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.kartu {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.kartu a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
